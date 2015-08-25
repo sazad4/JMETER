@@ -5,6 +5,33 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>test-performance</name>
     <url>http://maven.apache.org</url>
+    <dependencies>
+    <dependency>
+            <groupId>org.apache.jmeter</groupId>
+            <artifactId>ApacheJMeter</artifactId>
+            <version>2.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jmeter</groupId>
+            <artifactId>ApacheJMeter_core</artifactId>
+            <version>2.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jmeter</groupId>
+            <artifactId>ApacheJMeter_config</artifactId>
+            <version>2.9</version>
+        </dependency>
+        <dependency>
+		        <groupId>kg.apc</groupId>
+		<artifactId>jmeter-plugins</artifactId>
+		<version>1.0.0</version>
+            </dependency>
+            <dependency>
+			    <groupId>avalon</groupId>
+			    <artifactId>avalon-framework</artifactId>
+			    <version>4.1.4</version>
+        </dependency>
+       </dependencies>
     <build>
         <plugins>
             <plugin>
@@ -26,14 +53,4 @@
             </plugin>
         </plugins>
     </build>
-    <!-- <build>
-        <plugins>
-            <plugin>
-                <groupId>com.lazerycode.jmeter</groupId>
-                <artifactId>jmeter-maven-plugin</artifactId>
-                <version>1.8.1</version>
-            </plugin>
-        </plugins>
-    </build> -->
-    
 </project>
