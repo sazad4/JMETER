@@ -25,12 +25,21 @@
 		        <groupId>kg.apc</groupId>
 		<artifactId>jmeter-plugins</artifactId>
 		<version>1.0.0</version>
+        <exclusions>
+        <exclusion>
+                    <groupId>org.apache.hbase</groupId>
+                    <artifactId>hbase</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.hadoop</groupId>
+                    <artifactId>hadoop-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>kg.apc</groupId>
+                    <artifactId>perfmon</artifactId>
+                </exclusion>
+            </exclusions>
             </dependency>
-            <dependency>
-			    <groupId>avalon</groupId>
-			    <artifactId>avalon-framework</artifactId>
-			    <version>4.1.4</version>
-        </dependency>
        </dependencies>
     <build>
         <plugins>
