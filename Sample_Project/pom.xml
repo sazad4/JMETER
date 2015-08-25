@@ -20,14 +20,11 @@
                 <groupId>com.smartbear.soapui</groupId>
                 <artifactId>soapui-maven-plugin</artifactId>
                 <version>5.0.0</version>
-                
-                
                 <dependencies>
                     <dependency>
                         <groupId>org.reflections</groupId>
                         <artifactId>reflections-parent</artifactId>
                         <version>0.9.9-RC1</version>
-                        <type>jar.lastUpdated</type>
                     </dependency>
                     
                     <dependency>
