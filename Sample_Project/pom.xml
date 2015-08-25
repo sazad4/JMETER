@@ -6,8 +6,7 @@
     <groupId>com.test.app</groupId>
     <artifactId>Sample_Project</artifactId>
     <version>1.0-SNAPSHOT</version>
-     <url>http://maven.apache.org</url>
-    <packaging>jar</packaging>
+   <packaging>jar</packaging>
     <description>SOAP UI Tests</description>
     <pluginRepositories>
         <pluginRepository>
@@ -19,21 +18,20 @@
         <plugins>
             <plugin>
                 <groupId>com.smartbear.soapui</groupId>
-                <artifactId>soapui-maven-plugin</artifactId>
-                <version>5.0.0</version>
+                <artifactId>soapui-pro-maven-plugin</artifactId>
+                <version>5.1.1</version>
+            
                 <dependencies>
                     <dependency>
                         <groupId>org.reflections</groupId>
-                        <artifactId>reflections-parent</artifactId>
+                        <artifactId>reflections</artifactId>
                         <version>0.9.9-RC1</version>
                     </dependency>
-                    
                     <dependency>
                         <groupId>org.apache.poi</groupId>
                         <artifactId>poi-ooxml</artifactId>
-                        <version>3.10.1</version>
+                        <version>3.10-FINAL</version>
                     </dependency>
-                    
                 </dependencies>
                 <executions>
                     <execution>
@@ -45,7 +43,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <projectFile>src/test/java/com/test/app/Shared-Services-ID-generation-soapui-project.xml</projectFile>
+                    <projectFile>src/test/java/com/test/app/myWebService-soapui-project.xml</projectFile>
                   
                     <outputFolder>${project.build.directory}/surefire-reports</outputFolder>
                     <junitReport>true</junitReport>
@@ -56,5 +54,5 @@
                 </configuration>
             </plugin>   
         </plugins>
-    </build>          
+    </build>                    
 </project>
